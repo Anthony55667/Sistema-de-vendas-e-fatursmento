@@ -1,4 +1,4 @@
-Anthony Berto: class Usuario {
+ class Usuario {
  #nome
  #email
  #senha
