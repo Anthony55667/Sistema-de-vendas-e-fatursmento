@@ -1,0 +1,48 @@
+class Usuario{
+    #nome
+    #CPF
+    #Data_nasineto
+    #email
+    #senha
+
+    constructor(nome , CPF ,Data_nasineto , email , senha){
+            this.#CPF = CPF
+            this.#Data_nasineto = Data_nasineto
+            this.#email = email
+            this.#nome  = nome
+            this.#senha = senha
+    }
+        getNome() {this.#nome}
+        getCPF()  {this.#CPF}
+        getData_nasineto() {this.#Data_nasineto}
+        getEmail() {this.#email}
+        getSenha() {this.#senha}
+
+        setNome(nome) {this.#nome = nome}
+        setCṔF(cpf)   {this.#CPF = cpf}
+        setData_nasineto(data) {this.#Data_nasineto = data}
+        setEmail(email) {this.#email = email}
+        setSenha(senha) {this.#senha = senha}
+
+
+    accessarSistema(){
+        return "Usuario o acessou o sistema"
+    }
+}
+
+class UsuarioAdmin extends Usuario{
+
+    accessarSistema(){
+
+        return 'O admin  acessou o sistema'
+    }
+    }
+
+    class UsuarioComum extends Usuario  {
+        
+            accessarSistema(){
+                return 'O comum acessou o sistema'
+            }
+    }
+
+    export { Usuario , UsuarioAdmin ,UsuarioComum}
