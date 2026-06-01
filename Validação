@@ -1,0 +1,19 @@
+
+export function Validacao (nome , CPF ,Data_nasineto , email , senha){
+    if (!nome) {
+        throw new Error("O nome é obrigatório")
+    }
+    if (!CPF){
+        throw new Error("O CPF é obrigatório ")
+    }
+    if (!Data_nasineto){
+        throw new Error("O data de nasineto é obrigatório")
+    }
+    if (!email || !email.includes('@')){
+        throw new Error("Email inválido")
+    }
+    if (!senha || senha.length < 4 ) {
+        throw new Error("Senha precisa ter mínimo 4 carateres")
+    }
+}
+
