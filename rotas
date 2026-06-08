@@ -1,0 +1,10 @@
+try {
+   const { nome_empresa , id , preco , categoria , estoque } = req.body;
+   validarProduto (nome_empresa , id , nome_empresa , preco , categoria , estoque); 
+   res.json ({
+      mensagen : "O produto foi cadastrado"
+   })
+} catch (erro){
+   console.log("O produto não foi cadastrado");
+   
+}
