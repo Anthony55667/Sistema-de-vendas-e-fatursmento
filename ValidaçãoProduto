@@ -1,0 +1,21 @@
+export function ValidaçaoProduto(nome_produto , id , nome_empresa , preco , categoria , estoque){
+
+     if (!nome_produto) {
+        throw new Error("O nome do produto é obrigatório")
+     }
+     if (!id) {
+        throw new Error("O ID é obrigatório")
+     }
+     if (!nome_empresa) {
+        throw new Error("O nome da empresa é obrigatório")
+     }
+     if (!preco || preco.length <= 0 ) {
+        throw new Error("O preco esta invalido")
+     }
+     if (!categoria) {
+        throw new Error("O categoria é invalido")
+     }
+     if (!estoque || estoque.length <= 0 ) {
+        throw new Error("digite um quantidade de um produto")
+     }
+}
